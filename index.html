@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>BINARIOS A DECIMALES</title>
+</head>
+
+<body class="bg-linear-to-r from-teal-200 to-teal-50 min-h-screen p-2 sm:p-4">
+
+  <header class="border-4 border-teal-500 border-dashed bg-linear-to-r from-teal-300 to-teal-100
+   rounded-3xl mt-2 mb-20 mx-auto w-[95%] p-6 sm:p-6 lg:border-8 lg:p-10 lg:w-4/5">
+
+    <h1 class="text-center text-3xl sm:text-3xl lg:text-4xl 2xl:text-5xl text-teal-600
+     font-bold [text-shadow:0_0_12px_rgba(255,255,255,1)]">
+      BINARIOS A DECIMALES
+    </h1>
+  </header>
+
+  <main>
+    <details open class="mb-20 mx-auto w-[95%] sm:w-[95%] lg:w-4/5 border-2
+     border-teal-300 rounded-2xl p-4 bg-teal-50/50">
+
+      <summary class="cursor-pointer bg-linear-to-r from-teal-500 to-teal-100
+            rounded-2xl w-full p-2 pl-4 text-white font-bold mb-4
+              shadow-md hover:from-teal-600 hover:to-teal-300 transition-all">
+        Binarios a Decimales
+      </summary>
+
+      <p class="px-4 text-teal-800 font-medium max-w-4xl">
+        Programa una función para convertir números binarios a decimales y viceversa,
+        pe. miFuncion(100,2) devolverá 4 base 10.
+      </p>
+    </details>
+
+    <section class="flex flex-col lg:flex-row items-center justify-center gap-16
+     px-4 lg:ml-20 2xl:ml-40 transition-all duration-300">
+
+         <section class="w-full sm:w-[90%] md:w-3/4 lg:w-1/2 border-teal-500 border-2 border-solid
+        bg-linear-to-r from-teal-400 to-green-200  rounded-2xl pb-5 pt-2 flex flex-col items-center">
+
+
+              <h2 class="text-center pb-4 text-teal-900 bg-linear-to-r from-teal-500 to-teal-200 
+              font-bold text-3xl border-2 border-solid border-teal-500 rounded-2xl w-3/5 mb-8">
+                Unidad
+              </h2>
+
+              <div class="w-full px-8 flex flex-col items-center gap-4">
+                <label class="font-bold self-start">Introduce el valor:</label>
+                <input class="border-teal-500 rounded-2xl w-full bg-linear-to-r from-teal-100 to-teal-50
+                border border-solid p-2 text-center font-bold" type="number" id="numero" />
+
+                <label class="font-bold self-start">Convertir a:</label>
+                <select class="border-teal-500 text-white font-bold rounded-2xl
+                bg-linear-to-r from-teal-600 to-teal-300 border border-solid p-2 w-full" id="unidad">
+                 
+                  <option value="B">Convertir A Binario</option>
+                  <option value="D">Convertir A Decimal</option>
+
+
+                </select>
+
+                <button class="border-teal-500 border-2 text-black font-bold border-solid
+                bg-linear-to-r from-teal-500 to-teal-100
+                rounded-2xl w-1/2 sm:w-1/3 py-2 mt-4 transition-all duration-300 ease-in-out
+                cursor-pointer hover:bg-linear-to-r hover:scale-105
+                hover:from-teal-600 hover:to-teal-200 hover:text-white hover:shadow-lg hover:shadow-green-600"
+                 id="calcular" type="button">
+                  MOSTRAR
+                </button>
+
+                <p class="w-full border border-solid border-teal-500 bg-linear-to-r from-teal-100 to-teal-50
+                py-3 rounded-2xl text-center font-bold mt-4" id="resultado"></p>
+              </div>
+        </section>
+
+        <div class="w-full lg:w-2/5 flex justify-center p-6">
+          <img class="w-full max-w-[300px] lg:max-w-[500px] h-auto object-contain drop-shadow-xl" src="imagenes/numeros.png"
+            alt="imagen de números" />
+        </div>
+    </section>
+  </main>
+
+  <script src="js/decimales.js"></script>
+</body>
+
+</html>
